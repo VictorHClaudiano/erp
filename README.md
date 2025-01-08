@@ -1,4 +1,4 @@
-# Sistema Simples de controle de contas e clientes
+# Sistema Simples de controle de contas a pagar, receber e clientes
 <h1>ERP para pequenas empresas</h1>
 
 <h2> -> Baixe o projeto</h2><br>
