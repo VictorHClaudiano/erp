@@ -1,2 +1,2 @@
-# erp
-Erp para pequenas empresas
+# Sistema Simples de controle de contas e clientes
+ERP para pequenas empresas
