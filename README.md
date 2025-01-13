@@ -8,7 +8,7 @@
         <p>python3 -m venv env</p>
         <p>source env/bin/activate</p>
 <h2> --> Instale as dependências do projeto "pip install -r requirements.txt"</h2> <br>
-<h2> --> Inicie o projeto "python manage.py runserver" e abra </h2><br>
+<h2> --> Inicie o projeto "python manage.py runserver" e abra no navegador http://127.0.0.1:8000/ </h2><br>
 
 <div>
         <img src="./assets/img.png" alt="imagens do projeto">
