@@ -27,3 +27,11 @@ class ContaAReceber(models.Model):
 
     def __str__(self):
         return f"{self.descricao} - {self.valor} - {'Pago' if self.pago else 'Pendente'}"
+
+
+class Estoque(models.Model):
+    item = models.CharField(max_length=50)
+    quantidade = models.DecimalField(max_digits=10, decimal_places=2)
+    preco = models.DecimalField(max_digits=10, decimal_places=2)
+    
+    

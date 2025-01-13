@@ -37,7 +37,7 @@
             margin-top: 10px;
             background-color: #007bff;
             border-color: #007bff;
-            border-radius: 12px; /* Aumentando o border-radius para um visual mais minimalista */
+            border-radius: 12px;
         }
 
         .btn-custom:hover {
@@ -45,14 +45,13 @@
             border-color: #0056b3;
         }
 
-        /* Botões de cadastro com cor verde escuro mais suave */
         .btn-cadastro {
-            background-color: #569e65; /* Verde escuro mais suave */
+            background-color: #569e65;
             border-color: #55b369;
         }
 
         .btn-cadastro:hover {
-            background-color: #1e7e34; /* Um tom um pouco mais escuro */
+            background-color: #1e7e34;
             border-color: #1e7e34;
         }
     </style>
@@ -85,7 +84,7 @@
 
         <!-- Cards -->
         <div class="row row-cols-1 row-cols-md-2 g-4">
-            <!-- Cards de Clientes -->
+            <!-- Clientes -->
             <div class="col">
                 <div class="card shadow-sm text-center">
                     <div class="card-body">
@@ -105,7 +104,7 @@
                 </div>
             </div>
 
-            <!-- Cards de Contas a Pagar -->
+            <!-- Contas a Pagar -->
             <div class="col">
                 <div class="card shadow-sm text-center">
                     <div class="card-body">
@@ -125,7 +124,7 @@
                 </div>
             </div>
 
-            <!-- Cards de Contas a Receber -->
+            <!-- Contas a Receber -->
             <div class="col">
                 <div class="card shadow-sm text-center">
                     <div class="card-body">
@@ -141,6 +140,26 @@
                         <h5 class="card-title">Cadastrar Contas a Receber</h5>
                         <p class="card-text">Cadastre novas contas a receber no sistema.</p>
                         <a href="{% url 'cadastrar_conta_receber' %}" class="btn btn-cadastro">Cadastrar Conta a Receber</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estoque -->
+            <div class="col">
+                <div class="card shadow-sm text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Estoque</h5>
+                        <p class="card-text">Gerencie o estoque do sistema.</p>
+                        <a href="{% url 'listar_estoque' %}" class="btn btn-custom">Listar Estoque</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Cadastrar Estoque</h5>
+                        <p class="card-text">Cadastre novos itens no sistema.</p>
+                        <a href="{% url 'cadastrar_estoque' %}" class="btn btn-cadastro">Cadastrar Estoque</a>
                     </div>
                 </div>
             </div>

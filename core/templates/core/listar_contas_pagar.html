@@ -10,6 +10,12 @@
 <body>
     <div class="container mt-5">
         <h1>Contas a Pagar</h1>
+        <!-- Barra de pesquisa -->
+        <form method="GET" action="{% url 'listar_contas_pagar' %}" class="d-flex mb-4">
+            <input type="text" name="query" class="form-control me-2" placeholder="Pesquisar contas..."
+                    value="{{ query }}" aria-label="Pesquisar">
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+        </form>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -40,6 +46,10 @@
                            onclick="return confirm('Tem certeza que deseja excluir esta conta?');">Excluir</a>
                         <a href="{% url 'editar_conta_pagar' conta.id %}" class="btn btn-primary btn-sm">Editar</a>
                     </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="5" class="text-center">Nenhum item encontrado.</td>
                 </tr>
                 {% endfor %}
             </tbody>
