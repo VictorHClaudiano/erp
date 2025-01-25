@@ -1,5 +1,4 @@
 # Sistema  de controle de contas a pagar, receber, clientes e estoque
-<h1>ERP</h1>
 
 <h1> 1--> Baixe o projeto</h2><br>
 <h2> 2--> Utilize os seguintes comandos!</h2>
